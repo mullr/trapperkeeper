@@ -119,7 +119,7 @@
 ;; application instance if you use trapperkeeper's "main" function to
 ;; launch your application.  This allows you to get a reference to the
 ;; app in a remote nREPL session if you are using the nrepl service.
-(def main-app nil)
+(def ^:redef main-app nil)
 
 (defn run-app
   "Given a bootstrapped TrapperKeeper app, let the application run until shut down,
